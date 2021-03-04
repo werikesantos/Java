@@ -1,0 +1,100 @@
+import javax.swing.JOptionPane;
+
+public class Aula01{
+
+    public static void main(String[] args) {
+
+        /*Aula01 aula01A =  new Aula01();
+        aula01A.cotacaoDollar();
+
+        Aula01 aula01B =  new Aula01();
+        aula01B.quadrado();
+
+        Aula01 aula01C =  new Aula01();
+        aula01C.pagamentoComissao();
+
+        Aula01 aula01D = new Aula01();
+        aula01D.antecessor();*/
+
+        Aula01 aula02E = new Aula01();
+        aula02E.areaRetangulo();
+
+    }
+
+    public void cotacaoDollar(){
+        /* 
+         * 1) Ler a cotação do dólar e a quantidade de dólares. Converter para real e mostrar o resultado.
+         * 
+         */
+        double dollar = Double.parseDouble(JOptionPane.showInputDialog("Digite a quantidade de dólares:"));
+        double resultado = (dollar * 5.68);
+        JOptionPane.showMessageDialog(null, "Real: " + resultado);
+        
+    }
+    
+    public void quadrado(){
+        /* 
+         * 2) Ler 4 números, calcular o quadrado para cada um, somar todos os quadrados e mostrar o resultado.
+         * 
+         */
+        int primeiro = Integer.parseInt(JOptionPane.showInputDialog("Digite primeiro número:"));
+        int segundo = Integer.parseInt(JOptionPane.showInputDialog("Digite segundo número:"));
+        int terceiro = Integer.parseInt(JOptionPane.showInputDialog("Digite terceiro número:"));
+        int quarto = Integer.parseInt(JOptionPane.showInputDialog("Digite quarto número:"));
+
+        int quadrado1 = primeiro * 2; 
+        int quadrado2 = segundo * 2; 
+        int quadrado3 = terceiro * 2; 
+        int quadrado4 = quarto * 2; 
+
+        int resultado = quadrado1 + quadrado2 + quadrado3 + quadrado4;
+
+        JOptionPane.showMessageDialog(null, "Resultado: " + resultado);
+        
+    }
+
+    public void pagamentoComissao(){
+        /* 
+         * 3) Calcular o pagamento de comissão de vendedores de peças, levando-se em consideração que sua comissão 
+         * será de 5% do total da venda e que você tem os seguintes dados: preço unitário da peça e quantidade 
+         * vendida.
+         * 
+         */
+        JOptionPane.showMessageDialog(null, "Calça custa R$300,00");
+        double quantidade = Double.parseDouble(JOptionPane.showInputDialog("Digite quantas calças deseja comprar:"));
+
+        double total = (300 * quantidade); 
+
+        double comissao = (5.00 / 100.00) * total;
+
+        JOptionPane.showMessageDialog(null, "Total de comissão: " +  comissao);
+        
+    }
+    
+    public void antecessor(){
+        /* 
+         * 4) Ler um valor inteiro e exibir seu antecessor.
+         * 
+         */
+        int valor = Integer.parseInt(JOptionPane.showInputDialog("Digite um valor:"));
+
+        int antecessor = (valor - 1); 
+
+        JOptionPane.showMessageDialog(null, "Antecessor: " +  antecessor);
+    }
+
+    public void areaRetangulo(){
+        /* 
+         * 5) Ler as dimensões de um retângulo (base e altura), calcular e escrever a área do retângulo.
+         * 
+         */
+        int base = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor para a base do retângulo:"));
+        int altura = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor da altura do retângulo:"));
+
+        int area = base * altura; 
+
+        JOptionPane.showMessageDialog(null, "Area do retângulo: " +  area);
+
+    }
+    
+}
