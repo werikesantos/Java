@@ -11,9 +11,9 @@ public class PercentualReajuste {
 		 */
 		double salario = Double.parseDouble(JOptionPane.showInputDialog("Digite o seu salário:"));
 		double reajuste = Double.parseDouble(JOptionPane.showInputDialog("Digite o percentual do reajuste:"));
-		
+
 		double percentualReajuste = (reajuste / 100) * salario;
-		
+
 		JOptionPane.showMessageDialog(null, "Aumento salarial de " + reajuste + "%\nTotal: R$" + (percentualReajuste + salario));
 		
 	}

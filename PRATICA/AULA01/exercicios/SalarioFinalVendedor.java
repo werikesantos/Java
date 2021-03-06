@@ -13,7 +13,6 @@ public class SalarioFinalVendedor {
 		 * salário final do vendedor.
 		 * 
 		 */
-	
 		int carros = Integer.parseInt(JOptionPane.showInputDialog("Informe o numero de carros vendidos:"));
 		double vendas = Double.parseDouble(JOptionPane.showInputDialog("Informe o valor total de suas vendas:"));
 		double salariofixo = Double.parseDouble(JOptionPane.showInputDialog("Informe o salario fixo:"));
@@ -23,7 +22,6 @@ public class SalarioFinalVendedor {
 
 		JOptionPane.showMessageDialog(null, "O custo ao consumidor de um carro novo é: R$" + salario);
 
-		
 	}
 
 }

@@ -1,0 +1,33 @@
+package exercicios;
+
+import javax.swing.JOptionPane;
+
+public class eleitoresMunicipio {
+
+	public static void main(String[] args) {
+		/*
+		 * 8) Ler o número total de eleitores de um município, o número de votos brancos, nulos e
+		 * válidos. Calcular e escrever o percentual que cada um representa em relação ao total de
+		 * eleitores.
+		 * 
+		 */
+		int totalEleitores = Integer.parseInt(JOptionPane.showInputDialog("Digite o total de eleitores:"));
+		int votosBrancos = Integer.parseInt(JOptionPane.showInputDialog("Digite o total de votos brancos:"));
+		int votosnulos = Integer.parseInt(JOptionPane.showInputDialog("Digite o total de votos nulos:"));
+		int votosValidos = Integer.parseInt(JOptionPane.showInputDialog("Digite o total de votos Válidos:"));
+		
+		double percentualValidos = (votosValidos / totalEleitores) * 100;
+		double percentualBrancos = (votosBrancos / totalEleitores) * 100;
+	    double percentualNulos = (votosnulos / totalEleitores) * 100;
+
+	    JOptionPane.showMessageDialog(null, "Votos validos: " +  percentualValidos);
+	    JOptionPane.showMessageDialog(null, "Votos em branco: " +  percentualBrancos);
+	    JOptionPane.showMessageDialog(null, "Votos nulos: " +  percentualNulos);
+	    
+	    System.out.printf("\n\n%6.2f%% de votos validos.", percValidos);
+	    System.out.printf("\n%6.2f%% de votos em branco.", percBrancos);
+	    System.out.printf("\n%6.2f%% de votos nulos.\n", percNulos);
+	    
+	}
+
+}
