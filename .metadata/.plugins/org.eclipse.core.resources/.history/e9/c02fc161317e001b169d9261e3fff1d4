@@ -24,13 +24,9 @@ public class eleitoresMunicipio {
 		double percentualNulos = (votosnulos * 100) / totalEleitores;
 		double percentualValidos = (votosValidos * 100) / totalEleitores;
 
-		System.out.println("Porcentagem: ");
 		JOptionPane.showMessageDialog(null, "Votos em branco: " +  percentualBrancos + "%");
-		System.out.println("Brancos: " + percentualBrancos + "%");
 		JOptionPane.showMessageDialog(null, "Votos nulos: " +  percentualNulos + "%");
-		System.out.println("Nulos: " + percentualNulos + "%");
-	    JOptionPane.showMessageDialog(null, "Votos válidos: " +  percentualValidos + "%");
-	    System.out.println("Válidos: " + percentualValidos + "%");
+	    JOptionPane.showMessageDialog(null, "Votos validos: " +  percentualValidos + "%");
 	       
 	}
 
