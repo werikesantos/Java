@@ -3720,3 +3720,36 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.core.jobs 4 2 2021-03-06 01:35:54.547
+!MESSAGE An internal error occurred during: "Discard Changes".
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Checkout conflict with file: .metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log
+	at org.eclipse.jgit.api.CheckoutCommand.checkoutPath(CheckoutCommand.java:528)
+	at org.eclipse.jgit.api.CheckoutCommand.access$3(CheckoutCommand.java:522)
+	at org.eclipse.jgit.api.CheckoutCommand$2.apply(CheckoutCommand.java:513)
+	at org.eclipse.jgit.dircache.DirCacheEditor.applyEdits(DirCacheEditor.java:164)
+	at org.eclipse.jgit.dircache.DirCacheEditor.finish(DirCacheEditor.java:99)
+	at org.eclipse.jgit.dircache.BaseDirCacheEditor.commit(BaseDirCacheEditor.java:243)
+	at org.eclipse.jgit.dircache.DirCacheEditor.commit(DirCacheEditor.java:92)
+	at org.eclipse.jgit.api.CheckoutCommand.checkoutPathsFromCommit(CheckoutCommand.java:519)
+	at org.eclipse.jgit.api.CheckoutCommand.checkoutPaths(CheckoutCommand.java:425)
+	at org.eclipse.jgit.api.CheckoutCommand.call(CheckoutCommand.java:178)
+	at org.eclipse.egit.core.op.DiscardChangesOperation.discardChanges(DiscardChangesOperation.java:244)
+	at org.eclipse.egit.core.op.DiscardChangesOperation.discardChanges(DiscardChangesOperation.java:199)
+	at org.eclipse.egit.core.op.DiscardChangesOperation.access$0(DiscardChangesOperation.java:187)
+	at org.eclipse.egit.core.op.DiscardChangesOperation$1.run(DiscardChangesOperation.java:180)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.egit.core.op.DiscardChangesOperation.execute(DiscardChangesOperation.java:183)
+	at org.eclipse.egit.core.internal.job.JobUtil$2.runInWorkspace(JobUtil.java:107)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Could not rename file C:\xampp\htdocs\JAVA\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log11674303030854131761.tmp to C:\xampp\htdocs\JAVA\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1510)
+	at org.eclipse.jgit.api.CheckoutCommand.checkoutPath(CheckoutCommand.java:525)
+	... 19 more
+Caused by: java.io.IOException: Could not rename file C:\xampp\htdocs\JAVA\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log11674303030854131761.tmp to C:\xampp\htdocs\JAVA\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.util.FileUtils.rename(FileUtils.java:322)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1508)
+	... 20 more
