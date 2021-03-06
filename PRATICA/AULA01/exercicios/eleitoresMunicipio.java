@@ -12,12 +12,26 @@ public class eleitoresMunicipio {
 		 * 
 		 */
 		int totalEleitores = Integer.parseInt(JOptionPane.showInputDialog("Digite o total de eleitores:"));
+		System.out.println("Eleitores: " + totalEleitores);
 		int votosBrancos = Integer.parseInt(JOptionPane.showInputDialog("Digite o total de votos brancos:"));
+		System.out.println("Brancos: " + votosBrancos);	
 		int votosnulos = Integer.parseInt(JOptionPane.showInputDialog("Digite o total de votos nulos:"));
+		System.out.println("Nulos: " + votosnulos);
 		int votosValidos = Integer.parseInt(JOptionPane.showInputDialog("Digite o total de votos Válidos:"));
+		System.out.println("Válidos: " + votosValidos);
 		
-		/*
-        JOptionPane.showMessageDialog(null, "Real: R$" + resultado);*/
+		double percentualBrancos = (votosBrancos * 100) / totalEleitores;
+		double percentualNulos = (votosnulos * 100) / totalEleitores;
+		double percentualValidos = (votosValidos * 100) / totalEleitores;
+
+		System.out.println("Porcentagem: ");
+		JOptionPane.showMessageDialog(null, "Votos em branco: " +  percentualBrancos + "%");
+		System.out.println("Brancos: " + percentualBrancos + "%");
+		JOptionPane.showMessageDialog(null, "Votos nulos: " +  percentualNulos + "%");
+		System.out.println("Nulos: " + percentualNulos + "%");
+	    JOptionPane.showMessageDialog(null, "Votos válidos: " +  percentualValidos + "%");
+	    System.out.println("Válidos: " + percentualValidos + "%");
+
 	}
 
 }
