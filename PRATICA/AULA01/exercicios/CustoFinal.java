@@ -15,7 +15,6 @@ public class CustoFinal {
 
 	     double porcentagemDistribuidor = 28.0;
 	     double PercentualImpostos = 45.0;
-<<<<<<< HEAD
 
 	     double custoFabrica = Double.parseDouble(JOptionPane.showInputDialog("Informe o custo de fábrica de um carro novo:"));
 
@@ -24,16 +23,6 @@ public class CustoFinal {
 
 	     double custoConsumidor = (Destribuidor + ValorImpostos);
 
-=======
-	 
-	     double custoFabrica = Double.parseDouble(JOptionPane.showInputDialog("Informe o custo de fábrica de um carro novo:"));
-	 
-	     double Destribuidor = (custoFabrica * porcentagemDistribuidor) / 100.000;
-	     double ValorImpostos = (custoFabrica * PercentualImpostos) / 100;
-	 
-	     double custoConsumidor = (Destribuidor + ValorImpostos);
-	 
->>>>>>> 886525c5558fecc77e54394ce7f7522a40c3b69a
 	     JOptionPane.showMessageDialog(null, "O custo ao consumidor de um carro novo é: R$" + custoConsumidor);
 
 	}
