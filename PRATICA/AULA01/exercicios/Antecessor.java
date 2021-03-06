@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 public class Antecessor {
 
 	public static void main(String[] args) {
-		/* 
+	/* 
          * 4) Ler um valor inteiro e exibir seu antecessor.
          * 
          */
