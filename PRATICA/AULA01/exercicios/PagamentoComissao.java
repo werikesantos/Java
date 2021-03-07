@@ -4,10 +4,8 @@ public class PagamentoComissao {
 
 	public static void main(String[] args) {
 	/* 
-         * 3) Calcular o pagamento de comissão de vendedores de peças, 
-         * levando-se em consideração que sua comissão
-         * será de 5% do total da venda e que voê tem os seguintes dados: 
-         * preço unitário da peça e quantidade vendida. 
+         * 3) Calcular o pagamento de comissão de vendedores de peçaas, levando-se em consideração que sua comissão
+         * será de 5% do total da venda e que você tem os seguintes dados: preço unitário da peça e quantidade vendida. 
          * 
          */
         JOptionPane.showMessageDialog(null, "Calça custa R$300,00");
