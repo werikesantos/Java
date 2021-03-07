@@ -1,16 +1,14 @@
-package exercicios;
-
 import javax.swing.JOptionPane;
 
 public class SalarioFinalVendedor {
 
 	public static void main(String[] args) {
 		/*
-		 * 11) Uma revendedora de carros usados paga a seus funcionários vendedores um salário fixo
-		 * por mês, mais uma comissão também fixa para cada carro vendido e mais 5% do valor
-		 * das vendas por ele efetuadas. Ler o número de carros por ele vendidos, o valor total de
-		 * suas vendas, o salário fixo e o valor que ele recebe por carro vendido. Calcular e exibir o
-		 * salário final do vendedor.
+		 * 11) Uma revendedora de carros usados paga a seus funcionï¿½rios vendedores um salï¿½rio fixo
+		 * por mï¿½s, mais uma comissï¿½o tambï¿½m fixa para cada carro vendido e mais 5% do valor
+		 * das vendas por ele efetuadas. Ler o nï¿½mero de carros por ele vendidos, o valor total de
+		 * suas vendas, o salï¿½rio fixo e o valor que ele recebe por carro vendido. Calcular e exibir o
+		 * salï¿½rio final do vendedor.
 		 * 
 		 */
 		int carros = Integer.parseInt(JOptionPane.showInputDialog("Informe o numero de carros vendidos:"));
@@ -20,7 +18,7 @@ public class SalarioFinalVendedor {
 
 		double salario = salariofixo + (comissao * carros) + (vendas * 0.05);
 
-		JOptionPane.showMessageDialog(null, "O custo ao consumidor de um carro novo é: R$" + salario);
+		JOptionPane.showMessageDialog(null, "O custo ao consumidor de um carro novo ï¿½: R$" + salario);
 
 	}
 

@@ -1,18 +1,16 @@
-package exercicios;
-
 import javax.swing.JOptionPane;
 
 public class SomaQuadrados {
 
 	public static void main(String[] args) {
 		/* 
-         * 2) Ler 4 números, calcular o quadrado para cada um, somar todos os quadrados e mostrar o resultado.
+         * 2) Ler 4 nï¿½meros, calcular o quadrado para cada um, somar todos os quadrados e mostrar o resultado.
          * 
          */
-        int primeiro = Integer.parseInt(JOptionPane.showInputDialog("Digite primeiro número:"));
-        int segundo = Integer.parseInt(JOptionPane.showInputDialog("Digite segundo número:"));
-        int terceiro = Integer.parseInt(JOptionPane.showInputDialog("Digite terceiro número:"));
-        int quarto = Integer.parseInt(JOptionPane.showInputDialog("Digite quarto número:"));
+        int primeiro = Integer.parseInt(JOptionPane.showInputDialog("Digite primeiro nï¿½mero:"));
+        int segundo = Integer.parseInt(JOptionPane.showInputDialog("Digite segundo nï¿½mero:"));
+        int terceiro = Integer.parseInt(JOptionPane.showInputDialog("Digite terceiro nï¿½mero:"));
+        int quarto = Integer.parseInt(JOptionPane.showInputDialog("Digite quarto nï¿½mero:"));
 
         int quadrado1 = primeiro * 2; 
         int quadrado2 = segundo * 2; 

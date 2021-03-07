@@ -1,23 +1,21 @@
-package exercicios;
-
 import javax.swing.JOptionPane;
 
 public class PagamentoComissao {
 
 	public static void main(String[] args) {
 		/* 
-         * 3) Calcular o pagamento de comissão de vendedores de peças, levando-se em consideração que sua comissão
-         * será de 5% do total da venda e que você tem os seguintes dados: preço unitário da peça e quantidade vendida. 
+         * 3) Calcular o pagamento de comissï¿½o de vendedores de peï¿½as, levando-se em consideraï¿½ï¿½o que sua comissï¿½o
+         * serï¿½ de 5% do total da venda e que vocï¿½ tem os seguintes dados: preï¿½o unitï¿½rio da peï¿½a e quantidade vendida. 
          * 
          */
-        JOptionPane.showMessageDialog(null, "Calça custa R$300,00");
-        double quantidade = Double.parseDouble(JOptionPane.showInputDialog("Digite quantas calças deseja comprar:"));
+        JOptionPane.showMessageDialog(null, "Calï¿½a custa R$300,00");
+        double quantidade = Double.parseDouble(JOptionPane.showInputDialog("Digite quantas calï¿½as deseja comprar:"));
 
         double total = (300 * quantidade); 
 
         double comissao = (5.00 / 100.00) * total;
 
-        JOptionPane.showMessageDialog(null, "Total de comissão: " +  comissao);
+        JOptionPane.showMessageDialog(null, "Total de comissï¿½o: " +  comissao);
 
 	}
 

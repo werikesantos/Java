@@ -1,13 +1,11 @@
-package exercicios;
-
 import javax.swing.JOptionPane;
 
 public class eleitoresMunicipio {
 
 	public static void main(String[] args) {
 		/*
-		 * 8) Ler o número total de eleitores de um município, o número de votos brancos, nulos e
-		 * válidos. Calcular e escrever o percentual que cada um representa em relação ao total de
+		 * 8) Ler o nï¿½mero total de eleitores de um municï¿½pio, o nï¿½mero de votos brancos, nulos e
+		 * vï¿½lidos. Calcular e escrever o percentual que cada um representa em relaï¿½ï¿½o ao total de
 		 * eleitores.
 		 * 
 		 */
@@ -17,8 +15,8 @@ public class eleitoresMunicipio {
 		System.out.println("Brancos: " + votosBrancos);	
 		int votosnulos = Integer.parseInt(JOptionPane.showInputDialog("Digite o total de votos nulos:"));
 		System.out.println("Nulos: " + votosnulos);
-		int votosValidos = Integer.parseInt(JOptionPane.showInputDialog("Digite o total de votos Válidos:"));
-		System.out.println("Válidos: " + votosValidos);
+		int votosValidos = Integer.parseInt(JOptionPane.showInputDialog("Digite o total de votos Vï¿½lidos:"));
+		System.out.println("Vï¿½lidos: " + votosValidos);
 		
 		double percentualBrancos = (votosBrancos * 100) / totalEleitores;
 		double percentualNulos = (votosnulos * 100) / totalEleitores;
@@ -29,8 +27,8 @@ public class eleitoresMunicipio {
 		System.out.println("Brancos: " + percentualBrancos + "%");
 		JOptionPane.showMessageDialog(null, "Votos nulos: " +  percentualNulos + "%");
 		System.out.println("Nulos: " + percentualNulos + "%");
-	    JOptionPane.showMessageDialog(null, "Votos válidos: " +  percentualValidos + "%");
-	    System.out.println("Válidos: " + percentualValidos + "%");
+	    JOptionPane.showMessageDialog(null, "Votos vï¿½lidos: " +  percentualValidos + "%");
+	    System.out.println("Vï¿½lidos: " + percentualValidos + "%");
 
 	}
 

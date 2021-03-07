@@ -1,20 +1,18 @@
-package exercicios;
-
 import javax.swing.JOptionPane;
 
 public class AreaRetangulo {
 
 	public static void main(String[] args) {
-		/* 
-         * 5) Ler as dimensões de um retângulo (base e altura), calcular e escrever a área do retângulo.
+	/* 
+         * 5) Ler as dimensï¿½es de um retï¿½ngulo (base e altura), calcular e escrever a ï¿½rea do retï¿½ngulo.
          * 
          */
-        int base = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor para a base do retângulo:"));
-        int altura = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor da altura do retângulo:"));
+        int base = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor para a base do retï¿½ngulo:"));
+        int altura = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor da altura do retï¿½ngulo:"));
 
         int area = base * altura; 
 
-        JOptionPane.showMessageDialog(null, "Área do retângulo: " +  area);
+        JOptionPane.showMessageDialog(null, "ï¿½rea do retï¿½ngulo: " +  area);
 
 	}
 

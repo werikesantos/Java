@@ -1,5 +1,3 @@
-package exercicios;
-
 import javax.swing.JOptionPane;
 
 public class DiasDeVida {

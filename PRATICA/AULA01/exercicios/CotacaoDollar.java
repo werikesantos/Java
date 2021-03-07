@@ -1,5 +1,3 @@
-package exercicios;
-
 import javax.swing.JOptionPane;
 
 public class CotacaoDollar {
@@ -7,10 +5,10 @@ public class CotacaoDollar {
 	public static void main(String[] args) {
 
 		/* 
-         * 1) Ler a cotação do dólar e a quantidade de dólares. Converter para real e mostrar o resultado.
+         * 1) Ler a cotaï¿½ï¿½o do dï¿½lar e a quantidade de dï¿½lares. Converter para real e mostrar o resultado.
          * 
          */
-        double dollar = Double.parseDouble(JOptionPane.showInputDialog("Digite a quantidade de dólares:"));
+        double dollar = Double.parseDouble(JOptionPane.showInputDialog("Digite a quantidade de dï¿½lares:"));
         double resultado = (dollar * 5.68);
         JOptionPane.showMessageDialog(null, "Real: R$" + resultado);
 

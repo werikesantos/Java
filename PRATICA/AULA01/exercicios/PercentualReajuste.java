@@ -1,15 +1,13 @@
-package exercicios;
-
 import javax.swing.JOptionPane;
 
 public class PercentualReajuste {
 
 	public static void main(String[] args) {
 		/*
-		 * 9) Ler o salário mensal atual de um funcionário e o percentual de reajuste. Calcular e exibir o valor do novo salário.
+		 * 9) Ler o salï¿½rio mensal atual de um funcionï¿½rio e o percentual de reajuste. Calcular e exibir o valor do novo salï¿½rio.
 		 * 
 		 */
-		double salario = Double.parseDouble(JOptionPane.showInputDialog("Digite o seu salário:"));
+		double salario = Double.parseDouble(JOptionPane.showInputDialog("Digite o seu salï¿½rio:"));
 		double reajuste = Double.parseDouble(JOptionPane.showInputDialog("Digite o percentual do reajuste:"));
 
 		double percentualReajuste = (reajuste / 100) * salario;
