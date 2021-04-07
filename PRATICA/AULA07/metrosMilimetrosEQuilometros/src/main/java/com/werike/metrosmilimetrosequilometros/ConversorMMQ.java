@@ -41,6 +41,7 @@ public class ConversorMMQ extends javax.swing.JFrame {
 
         panel2.setBackground(java.awt.SystemColor.activeCaption);
 
+        digitoTXTF.setText("0.0");
         digitoTXTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 digitoTXTFActionPerformed(evt);
